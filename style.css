@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%)
+}
+body{
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-family: 'Big Shoulders Display', cursive;
+    background: var(--Verylightgray);
+}
+
+img{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+h1{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1rem;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size:15px;
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1.3rem;
+}
+
+button{
+    border: 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+.attribution { font-size: 11px; 
+    text-align: center;
+    min-width: 400px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.container{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    padding: 25px;
+    min-width: 300px;
+}
+
+.sedan{
+    background-color: var(--brightorange);
+    border-radius: 10px 10px 0  0;
+}
+
+.sedan button{
+  color:var(--brightorange);
+}
+
+.sedan button:hover{
+    background-color: var(--brightorange);
+    color: white;
+    border:1px solid white;
+    transition: all 0.2s ease-in-out;
+  }
+
+.suv{
+ background-color: var(--Darkcyan);
+}
+
+.suv button{
+    color: var(--Darkcyan);
+}
+.suv button:hover{
+    background-color: var(--Darkcyan);
+    color: white;
+    border:1px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.luxury{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 10px 10px ;
+}
+
+.luxury button{
+ color:var(--Verydarkcyan)
+}
+.luxury button:hover{
+    background-color: var(--Verydarkcyan);
+    color: white;
+    border:1px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media (min-width:720px){
+ 
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    .card{
+        max-width:200px;
+    }
+    
+    .sedan{
+        border-radius: 10px 0 0  10px;
+    }
+
+    .luxury{
+        border-radius:0 10px 10px 0 ;
+    }
+
+}
